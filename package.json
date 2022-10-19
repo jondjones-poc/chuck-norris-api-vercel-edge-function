@@ -1,0 +1,24 @@
+{
+  "name": "serverless-api-perf-tests",
+  "version": "1.0.0",
+  "description": "-[https://serverless-api-perf-tests.vercel.app/api/api](https://serverless-api-perf-tests.vercel.app/api/api)",
+  "main": "index.js",
+  "scripts": {
+    "install": "netlify-lambda install",
+    "start-api": "netlify-lambda serve functions",
+    "build": "netlify-lambda build functions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jondjones-poc/serverless-api-perf-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jondjones-poc/serverless-api-perf-tests/issues"
+  },
+  "homepage": "https://github.com/jondjones-poc/serverless-api-perf-tests#readme",
+  "dependencies": {
+    "netlify-lambda": "^2.0.15"
+  }
+}
