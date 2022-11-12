@@ -1,24 +1,26 @@
 {
-  "name": "serverless-api-perf-tests",
+  "name": "chuck-norris-api-vercel",
   "version": "1.0.0",
-  "description": "-[https://serverless-api-perf-tests.vercel.app/api/api](https://serverless-api-perf-tests.vercel.app/api/api)",
-  "main": "index.js",
+  "description": "https://serverless-api-perf-tests.vercel.app/api/api",
+  "main": "api.api.js",
   "scripts": {
-    "install": "netlify-lambda install",
-    "start-api": "netlify-lambda serve functions",
-    "build": "netlify-lambda build functions"
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jondjones-poc/serverless-api-perf-tests.git"
+    "url": "git+https://github.com/jondjones-poc/chuck-norris-api-vercel-edge-function"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jondjones-poc/serverless-api-perf-tests/issues"
+    "url": "https://github.com/jondjones-poc/chuck-norris-api-vercel-edge-function/issues"
   },
-  "homepage": "https://github.com/jondjones-poc/serverless-api-perf-tests#readme",
+  "homepage": "https://github.com/jondjones-poc/chuck-norris-api-vercel-edge-function#readme",
   "dependencies": {
-    "netlify-lambda": "^2.0.15"
+    "edge-runtime": "^2.0.2"
+  },
+  "devDependencies": {
+    "vercel": "^28.4.17"
   }
 }
